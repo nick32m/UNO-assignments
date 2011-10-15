@@ -6,15 +6,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The test class DrawCardTest.
+ * The test class SkipCardTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class DrawCardTest extends junit.framework.TestCase
+public class SkipCardTest
 {
-    
-    public void testCanPlayOn() {
+     public void testCanPlayOn() {
         //create a draw card
         
         DrawCard redDraw2 = new DrawCard(Card.COLOUR_RED, 2);
