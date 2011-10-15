@@ -2,8 +2,8 @@
 /**
  * Write a description of class DrawCard here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author  Nick Luo
+ * @version 15/Oct/2011
  */
 public class DrawCard extends Card
 {
