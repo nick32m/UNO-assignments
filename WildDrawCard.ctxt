@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=nDraw
+comment0.target=WildDrawCard(int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ WildDrawCard\n
+comment1.params=card
+comment1.target=boolean\ canPlayOn(Card)
+comment1.text=\n\ Check\ whether\ this\ card\ can\ be\ played\ on\ the\ given\ card.\ \n\ @param\ The\ card\ to\ be\ played\ on\n\ @returns\ true\ if\ either\ the\ colours\ or\ the\ symbols\ match\n
+comment2.params=game
+comment2.target=void\ play(UnoGame)
+comment2.text=\n\ Take\ any\ effect\ when\ the\ card\ is\ played.\n\ \n\ Wild\ Draw\ Card\ effect\:\ the\ next\ player\ draws\ nDraw\ cards\ and\ their\ turn\ will\n\ also\ be\ skipped\n
+numComments=3

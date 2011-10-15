@@ -1,22 +1,19 @@
 
 /**
- * Write a description of class DrawCard here.
+ * Write a description of class ReverseCard here.
  * 
- * @author  (your name)
- * @version 15/Oct/2011
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class DrawCard extends Card
+public class ReverseCard extends Card
 {
-    // instance variables - replace the example below with your own
-    private int nDraw;
-
+ 
     /**
-     * Constructor for objects of class DrawCard
+     * Constructor for objects of class ReverseCard
      */
-    public DrawCard(int colour, int nDraw)
+    public ReverseCard(int colour)
     {
         super(colour);
-        this.nDraw=nDraw;
     }
 
     /**
@@ -36,8 +33,6 @@ public class DrawCard extends Card
      * also be skipped
      */
     public void play (UnoGame game) {
-        game.draw(game.getNextPlayer(1),nDraw);
-        // the current player's turn will also be skipped
-        game.goToNextPlayer();
+        game.setPlayDirection(-1);
     }
 }

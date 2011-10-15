@@ -1,38 +1,36 @@
 
 /**
- * Write a description of class DrawCard here.
+ * Write a description of class WildDrawCard here.
  * 
- * @author  (your name)
- * @version 15/Oct/2011
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class DrawCard extends Card
+public class WildDrawCard
 {
-    // instance variables - replace the example below with your own
     private int nDraw;
-
     /**
-     * Constructor for objects of class DrawCard
+     * Constructor for objects of class WildDrawCard
      */
-    public DrawCard(int colour, int nDraw)
+    public WildDrawCard(int nDraw)
     {
-        super(colour);
-        this.nDraw=nDraw;
+       super();
+       this.nDraw = nDraw;
     }
 
-    /**
+     /**
      * Check whether this card can be played on the given card. 
      * @param The card to be played on
      * @returns true if either the colours or the symbols match
      */
     public boolean canPlayOn(Card card) {        
-        return (card.myColour == myColour);        
+        return true;       
     }
     
     
      /**
      * Take any effect when the card is played.
      * 
-     * Drawcard effect: the next player draws nDraw cards and their turn will
+     * Wild Draw Card effect: the next player draws nDraw cards and their turn will
      * also be skipped
      */
     public void play (UnoGame game) {

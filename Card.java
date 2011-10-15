@@ -40,7 +40,19 @@ public class Card
         myColour = colour;
         mySymbol = "" + number;
     }
-
+    
+     /*
+     * construtor with colour only
+     */
+    public Card(int colour) {
+        this.myColour = colour;
+    }
+    
+    /*
+     * construtor without colours and number, i.e. wild card
+     */
+    public Card() {
+    }
     
     /**
      * Get the colour of the card
