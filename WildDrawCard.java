@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class WildDrawCard
+public class WildDrawCard extends Card
 {
     private int nDraw;
     /**
@@ -13,7 +13,7 @@ public class WildDrawCard
      */
     public WildDrawCard(int nDraw)
     {
-       super();
+       super(COLOUR_NONE,"WildDraw");
        this.nDraw = nDraw;
     }
 

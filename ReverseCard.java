@@ -13,7 +13,7 @@ public class ReverseCard extends Card
      */
     public ReverseCard(int colour)
     {
-        super(colour);
+        super(colour,"Reverse");
     }
 
     /**

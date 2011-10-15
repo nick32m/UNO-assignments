@@ -15,7 +15,7 @@ public class DrawCard extends Card
      */
     public DrawCard(int colour, int nDraw)
     {
-        super(colour);
+        super(colour,"Draw");
         this.nDraw=nDraw;
     }
 

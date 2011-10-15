@@ -15,7 +15,7 @@ public class SkipCard extends Card
      */
     public SkipCard(int colour, int nSkip)
     {
-        super(colour, nSkip);
+        super(colour, "Skip");
         this.nSkip = nSkip;
     }
 

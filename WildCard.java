@@ -9,10 +9,10 @@ public class WildCard extends Card
 {
 
     /**
-     * Constructor for objects of class SkipCard
+     * Constructor for objects of class WildCard
      */
     public WildCard(){
-        super();
+        super(COLOUR_NONE,"Wild");
     }
 
     /**
