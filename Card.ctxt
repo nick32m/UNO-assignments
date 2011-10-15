@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=colour\ symbol
+comment0.target=Card(int,\ java.lang.String)
+comment0.text=\n\ Create\ a\ card\ with\ a\ given\ colour\ and\ symbol\n\ \n\ @param\ colour\ The\ card\ colour.\ Should\ be\ one\ of\ COLOUR_NONE,\ COLOUR_GREEN,\ COLOUR_BLUE,\ COLOUR_RED\ or\ COLOUR_YELLOW.\n\ @param\ symbol\ The\ symbol\ on\ the\ card\n
+comment1.params=colour\ number
+comment1.target=Card(int,\ int)
+comment1.text=\n\ Create\ a\ card\ with\ a\ given\ colour\ and\ number\n\ \n\ @param\ colour\ The\ card\ colour.\ Should\ be\ one\ of\ COLOUR_NONE,\ COLOUR_GREEN,\ COLOUR_BLUE,\ COLOUR_RED\ or\ COLOUR_YELLOW.\n\ @param\ number\ The\ number\ on\ the\ card\n
+comment2.params=
+comment2.target=int\ getColour()
+comment2.text=\n\ Get\ the\ colour\ of\ the\ card\n
+comment3.params=colour
+comment3.target=void\ setColour(int)
+comment3.text=\n\ Set\ the\ colour\ of\ the\ card\n
+comment4.params=
+comment4.target=java.lang.String\ getSymbol()
+comment4.text=\n\ Get\ the\ symbol\ on\ the\ card.\n
+comment5.params=card
+comment5.target=boolean\ canPlayOn(Card)
+comment5.text=\n\ Check\ whether\ this\ card\ can\ be\ played\ on\ the\ given\ card.\ \n\ @param\ The\ card\ to\ be\ played\ on\n\ @returns\ true\ if\ either\ the\ colours\ or\ the\ symbols\ match\n
+comment6.params=game
+comment6.target=void\ play(UnoGame)
+comment6.text=\n\ Take\ any\ effect\ when\ the\ card\ is\ played.\n\ \n\ The\ default\ is\ no\ effect.\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\n\ String\ representation\ of\ the\ card.\n
+numComments=8
