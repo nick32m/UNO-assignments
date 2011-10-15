@@ -141,7 +141,9 @@ public class UnoGame
      * Change the current player to the next one in the direction of play
      */
     public void goToNextPlayer() {
+        System.out.print("game direction:"+ myPlayDirection);
         myCurrentPlayer = (myCurrentPlayer + myPlayDirection + myPlayers.size()) % myPlayers.size();
+       
     }
     
     /**
