@@ -18,7 +18,13 @@ public class DrawCard extends Card
         super(colour,"Draw");
         this.nDraw=nDraw;
     }
-
+    
+    /**
+     * Getter metthod
+     */
+    public int getNDraw() {
+        return nDraw;
+    }
     /**
      * Check whether this card can be played on the given card. 
      * @param The card to be played on

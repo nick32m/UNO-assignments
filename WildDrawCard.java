@@ -16,13 +16,18 @@ public class WildDrawCard extends Card
        super(COLOUR_NONE,"WildDraw");
        this.nDraw = nDraw;
     }
-
+    public int getNDraw(){
+        return nDraw;
+    }
      /**
      * Check whether this card can be played on the given card. 
      * @param The card to be played on
      * @returns true if either the colours or the symbols match
      */
-    public boolean canPlayOn(Card card) {        
+    public boolean canPlayOn(Card card) { 
+        //change the wild draw card's colour
+        this.setColour(card.getColour());
+        // it should always return true;
         return true;       
     }
     

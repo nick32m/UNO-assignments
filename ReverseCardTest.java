@@ -13,6 +13,14 @@ import org.junit.Test;
  */
 public class ReverseCardTest extends junit.framework.TestCase
 {
+    public void testConstruct() {
+        ReverseCard redReverse = new ReverseCard(Card.COLOUR_RED);
+        // check colour
+        assertEquals(Card.COLOUR_RED, redReverse.getColour());
+        //check symbol
+        assertEquals("Reverse", redReverse.getSymbol());
+    }
+    
     public void testCanPlayOn() {
        ReverseCard redReverse = new ReverseCard(Card.COLOUR_RED);
        

@@ -13,6 +13,12 @@ import org.junit.Test;
  */
 public class DrawCardTest extends junit.framework.TestCase
 {
+    public void testConstruct() {
+        DrawCard redDraw2 = new DrawCard(Card.COLOUR_RED, 2);
+        
+        assertEquals(Card.COLOUR_RED, redDraw2.getColour());
+        assertEquals(2, redDraw2.getNDraw());
+    }
     
     public void testCanPlayOn() {
         //create a draw card
@@ -25,16 +31,16 @@ public class DrawCardTest extends junit.framework.TestCase
         Card card2 = new Card(Card.COLOUR_BLUE,2);
         
         //card 1 and card 2 should yield false on the method
-        assertEquals(false, redDraw2.canPlayOn(card1));
-        assertEquals(false, redDraw2.canPlayOn(card2));
+        assertFalse(redDraw2.canPlayOn(card1));
+        assertFalse(redDraw2.canPlayOn(card2));
         
         Card card3 = new Card(Card.COLOUR_RED, 5);
         Card card4 = new Card(Card.COLOUR_RED,2);
         
         // card 3 and card 4 should gives true
         
-        assertEquals(true, redDraw2.canPlayOn(card3));
-        assertEquals(true, redDraw2.canPlayOn(card4));
+        assertTrue(redDraw2.canPlayOn(card3));
+        assertTrue(redDraw2.canPlayOn(card4));
     
     }
 

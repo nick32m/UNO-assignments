@@ -9,7 +9,7 @@ public class SkipCard extends Card
 {
     // instance variables - replace the example below with your own
     private int nSkip;
-
+  
     /**
      * Constructor for objects of class SkipCard
      */
@@ -18,17 +18,11 @@ public class SkipCard extends Card
         super(colour, "Skip");
         this.nSkip = nSkip;
     }
-
-    /**
-     * Check whether this card can be played on the given card. 
-     * @param The card to be played on
-     * @returns true if either the colours or the symbols match
-     */
-    public boolean canPlayOn(Card card) { 
-        // it should only check for colour as skip card does not have symbol nor number
-        return (card.myColour == myColour);        
-    }
     
+    // getter method
+    public int getNSkip() {
+        return nSkip;
+    }
     
      /**
      * Take any effect when the card is played.
@@ -38,7 +32,8 @@ public class SkipCard extends Card
      */
     public void play (UnoGame game) {
         //skip the nSkip player
-        game.draw(game.getNextPlayer(nSkip),1);
-     
+        for (int i = 0; i<this.nSkip; i++) {
+            game.goToNextPlayer();
+        }
     }
 }
